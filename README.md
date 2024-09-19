@@ -1,6 +1,6 @@
 # conexao_postgree_2024_2
 
-Projeto demonstrando a integração do Flutter com o Postgres via pacote [postgres](https://pub.dev/packages/postgres)
+Projeto demonstrando a integração do Flutter com o Postgres via pacote [postgres](https://pub.dev/packages/postgres).
 
 Nesse exemplo é feito uma consulta trazendo toda a tabela Pessoas de um banco de dados em Postgree hospedado no serviço online [Neon](https://neon.tech/).
 
@@ -19,6 +19,7 @@ telefone VARCHAR(20),  -- Coluna para o número de telefone
 endereco TEXT  -- Coluna para o endereço da pessoa
 );
 
+O arquivo `dadosBanco.env` com os valores para efetuar a conexão com o banco de dados está na equipe do Teams da disciplina de Laboratório de desenvolvimento de dispositivos móveis 2024-2
 
 
 

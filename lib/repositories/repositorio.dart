@@ -1,4 +1,5 @@
 import 'package:postgres/postgres.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 class Repositorio {
 
@@ -15,11 +16,10 @@ class Repositorio {
   */
 
   static final Endpoint _endpoint = Endpoint(
-    host: 'ep-quiet-grass-a54otrv0.us-east-2.aws.neon.tech',
-    database: 'postgresdb',
-    username: 'postgresdb_owner',
-    password: 'f6gypr7cjCEd',
-
+    host: dotenv.get("HOST"),
+    database: dotenv.get("DATABASE"),
+    username: dotenv.get("USERNAME"),
+    password: dotenv.get("PASSWORD"),
   );
   static const ConnectionSettings _connectionSettings =
   ConnectionSettings(sslMode: SslMode.require); // no teste que fiz na base dados do PI usei SslMode.disable
